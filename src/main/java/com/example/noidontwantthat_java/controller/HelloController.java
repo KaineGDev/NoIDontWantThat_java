@@ -23,7 +23,7 @@ public class HelloController {
     public void handleNewTask(ActionEvent event) {
         try {
             // FXML laden
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com.example.noidontwantthat_java/new-task-view.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/noidontwantthat_java/new-task-view.fxml"));
             Parent root = fxmlLoader.load();
 
             // neue Szene (Fenster)
@@ -40,7 +40,7 @@ public class HelloController {
     public void handleViewTask(ActionEvent event) {
         try {
             // FXML laden
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com.example.noidontwantthat_java/view-task.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/noidontwantthat_java/view-task.fxml"));
             Parent root = fxmlLoader.load();
 
             // neue Szene
