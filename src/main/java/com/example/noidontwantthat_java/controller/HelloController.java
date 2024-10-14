@@ -51,6 +51,5 @@ public class HelloController {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 }
