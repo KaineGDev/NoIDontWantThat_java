@@ -15,9 +15,12 @@ import java.time.LocalTime;
 public class TaskController {
 
     private TaskDAO taskDAO;
+    @FXML
+    private Label title;
 
     public TaskController() {
         this.taskDAO = new TaskDAO();
+        title.setText("Test-Titel");
     }
 
     public void addTask(String description, java.time.LocalDate date, int hours, int minutes, LocalTime timebegin) {
@@ -28,6 +31,11 @@ public class TaskController {
         } catch (SQLException e) {
             System.err.println("Fehler beim Speichern der Tätigkeit: " + e.getMessage());
         }
+    }
+
+    @FXML
+    public void onSubmitButtonClick() {
+
     }
 
     // Weitere Methoden (CRUD)
