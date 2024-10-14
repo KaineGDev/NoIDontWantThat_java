@@ -13,7 +13,7 @@ import java.io.IOException;
 public class HelloController {
     @FXML
     private Label welcomeText;
-
+    //blabla
     @FXML
     protected void onHelloButtonClick() {
         welcomeText.setText("Welcome to JavaFX Application!");
